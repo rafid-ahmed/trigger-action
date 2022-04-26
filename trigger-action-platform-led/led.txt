@@ -1,0 +1,1845 @@
+Toolchain path: /home/rafid/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a-5.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+Toolchain version: crosstool-ng-1.22.0-80-g6c4433a
+Compiler version: 5.2.0
+Python requirements from /home/rafid/esp/esp-idf/requirements.txt are satisfied.
+
+App "trigger-action-platform" version: v3.3.1
+Arduino libraries in build:              LoRa      SPI        
+CXX build/main/main.o
+AR build/main/libmain.a
+Generating libmain.a.sections_info
+Generating esp32.project.ld
+LD build/trigger-action-platform.elf
+esptool.py v2.8
+Flashing binaries to serial port /dev/ttyUSB1 (app at offset 0x10000)...
+esptool.py v2.8
+Serial port /dev/ttyUSB1
+Connecting....
+Chip is ESP32D0WDQ6 (revision 1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 26MHz
+MAC: 24:6f:28:b1:b9:98
+Uploading stub...
+Running stub...
+Stub running...
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Compressed 8192 bytes to 31...
+Writing at 0x0000e000... (100 %)Wrote 8192 bytes (31 compressed) at 0x0000e000 in 0.0 seconds (effective 9332.8 kbit/s)...
+Hash of data verified.
+Compressed 25632 bytes to 15262...
+Writing at 0x00001000... (100 %)Wrote 25632 bytes (15262 compressed) at 0x00001000 in 1.4 seconds (effective 151.9 kbit/s)...
+Hash of data verified.
+Compressed 726128 bytes to 415124...
+Writing at 0x00010000... (3 %)Writing at 0x00014000... (7 %)Writing at 0x00018000... (11 %)Writing at 0x0001c000... (15 %)Writing at 0x00020000... (19 %)Writing at 0x00024000... (23 %)Writing at 0x00028000... (26 %)Writing at 0x0002c000... (30 %)Writing at 0x00030000... (34 %)Writing at 0x00034000... (38 %)Writing at 0x00038000... (42 %)Writing at 0x0003c000... (46 %)Writing at 0x00040000... (50 %)Writing at 0x00044000... (53 %)Writing at 0x00048000... (57 %)Writing at 0x0004c000... (61 %)Writing at 0x00050000... (65 %)Writing at 0x00054000... (69 %)Writing at 0x00058000... (73 %)Writing at 0x0005c000... (76 %)Writing at 0x00060000... (80 %)Writing at 0x00064000... (84 %)Writing at 0x00068000... (88 %)Writing at 0x0006c000... (92 %)Writing at 0x00070000... (96 %)Writing at 0x00074000... (100 %)Wrote 726128 bytes (415124 compressed) at 0x00010000 in 36.8 seconds (effective 158.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 128...
+Writing at 0x00008000... (100 %)Wrote 3072 bytes (128 compressed) at 0x00008000 in 0.0 seconds (effective 1522.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+MONITOR
+NG earlyets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0018,len:4
+load:0x3fff001c,len:6744
+load:0x40078000,len:12072
+load:0x40080400,len:6708
+entry 0x40080778
+[0;32mI (59) boot: Chip Revision: 1[0m
+[0;32mI (60) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (42) boot: ESP-IDF v3.3.1 2nd stage bootloader[0m
+[0;32mI (42) boot: compile time 11:53:20[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: SPI Speed      : 40MHz[0m
+[0;32mI (51) boot: SPI Mode       : DIO[0m
+[0;32mI (54) boot: SPI Flash Size : 4MB[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00005000[0m
+[0;32mI (76) boot:  1 otadata          OTA data         01 00 0000e000 00002000[0m
+[0;32mI (84) boot:  2 app0             OTA app          00 10 00010000 00140000[0m
+[0;32mI (91) boot:  3 app1             OTA app          00 11 00150000 00140000[0m
+[0;32mI (99) boot:  4 spiffs           Unknown data     01 82 00290000 00170000[0m
+[0;32mI (106) boot: End of partition table[0m
+[0;32mI (111) boot: No factory image, trying OTA 0[0m
+[0;32mI (116) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (123) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x2464c (149068) map[0m
+[0;32mI (184) esp_image: segment 1: paddr=0x00034674 vaddr=0x3ffbdb60 size=0x02c70 ( 11376) load[0m
+[0;32mI (189) esp_image: segment 2: paddr=0x000372ec vaddr=0x40080000 size=0x00400 (  1024) load[0m
+[0;32mI (191) esp_image: segment 3: paddr=0x000376f4 vaddr=0x40080400 size=0x0891c ( 35100) load[0m
+[0;32mI (214) esp_image: segment 4: paddr=0x00040018 vaddr=0x400d0018 size=0x76c18 (486424) map[0m
+[0;32mI (385) esp_image: segment 5: paddr=0x000b6c38 vaddr=0x40088d1c size=0x0a808 ( 43016) load[0m
+[0;32mI (415) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (461) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (462) boot: Disabling RNG early entropy source...[0m
+[0;32mI (462) cpu_start: Pro cpu up.[0m
+[0;32mI (465) cpu_start: Application information:[0m
+[0;32mI (470) cpu_start: Project name:     trigger-action-platform[0m
+[0;32mI (476) cpu_start: App version:      v3.3.1[0m
+[0;32mI (481) cpu_start: Compile time:     Mar 10 2020 11:53:22[0m
+[0;32mI (487) cpu_start: ELF file SHA256:  d1a7bff8419dc7e3...[0m
+[0;32mI (493) cpu_start: ESP-IDF:          v3.3.1[0m
+[0;32mI (498) cpu_start: Starting app cpu, entry point is 0x400814d0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (508) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (515) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (527) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (533) heap_init: At 3FFBDB5C len 00000004 (0 KiB): DRAM[0m
+[0;32mI (539) heap_init: At 3FFC9548 len 00016AB8 (90 KiB): DRAM[0m
+[0;32mI (546) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (552) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (558) heap_init: At 40093524 len 0000CADC (50 KiB): IRAM[0m
+[0;32mI (565) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (249) beacontest: started[0m
+[0;32mI (263) beacontest: Flash initialized[0m
+[0;32mI (264) BLE: Bluetooth Classic memory released[0m
+[0;32mI (264) BTDM_INIT: BT controller compile version [5aed448][0m
+[0;32mI (270) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE[0m
+[0;32mI (281) BLE: Bluetooth initialized[0m
+[0;32mI (382) phy: phy_version: 4102, 2fa7a43, Jul 15 2019, 13:06:06, 1, 0[0m
+[0;32mI (614) BLE: BLE enabled[0m
+[0;32mI (701) BLE: Bluedroid enabled[0m
+[0;32mI (704) LORA: Arduino libraries loaded[0m
+[0;32mI (705) LORA: SPI pins set[0m
+[0;32mI (705) LORA: Module pins set[0m
+[0;32mI (726) LORA: Initiliazed[0m
+[0;32mI (726) VLC: Configuring ADC1[0m
+[0;32mI (727) VLC: Initiliazed[0m
+[0;32mI (727) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (730) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (737) beacontest: I2C initialized[0m
+[0;32mI (740) beacontest: Parsers created[0m
+[0;32mI (744) RgbLedDriver: Initializing timer.[0m
+[0;32mI (749) RgbLedDriver: Initializing red.[0m
+[0;32mI (753) RgbLedDriver: Initializing green.[0m
+[0;32mI (758) RgbLedDriver: Initializing blue.[0m
+[0;32mI (763) RgbLedDriver: Initialized LED.[0m
+[0;32mI (767) beacontest: RGB LED driver created[0m
+[0;32mI (775) BLE: Starting scanning[0m
+[0;32mI (776) BLE: Scanning started[0m
+[0;32mI (780) BLE: Scan started[0m
+[0;32mI (783) LORA: Scan started[0m
+[0;32mI (786) VLC: Scan started[0m
+[0;32mI (1860) ta-network: A generic packet has been added by BLE.[0m
+[0;32mI (1860) ta-network: generic_broadcast_list[0m
+[0;32mI (1861) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (1865) ta-network: generic_ble_head[0m
+[0;32mI (1870) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (1875) ta-network: generic_lora_head[0m
+[0;32mI (1879) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (1884) ta-network: generic_vlc_head[0m
+[0;32mI (1889) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (1894) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (1900) beacontest: Adding a new action, id = 20[0m
+[0;32mI (1905) RgbLedDriver: Added a new action (20)[0m
+[0;32mI (1913) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (1952) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (1979) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (1989) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (1993) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (2030) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (2030) ta-network: A generic packet has been added by BLE.[0m
+[0;32mI (2031) ta-network: generic_broadcast_list[0m
+[0;32mI (2036) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (2041) ta-network: 20 46 15 01 01 00 00 00 [0m
+[0;32mI (2046) ta-network: generic_ble_head[0m
+[0;32mI (2050) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (2055) ta-network: generic_lora_head[0m
+[0;32mI (2060) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (2065) ta-network: generic_vlc_head[0m
+[0;32mI (2070) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (2074) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2080) beacontest: Adding a new action, id = 21[0m
+[0;32mI (2085) RgbLedDriver: Added a new action (21)[0m
+[0;32mI (2094) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2099) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2127) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2217) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2250) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2294) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2342) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2397) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (2434) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (2435) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2438) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2546) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2642) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2702) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2739) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (2739) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (2740) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (2781) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (2789) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2852) ta-network: A generic packet has been added by BLE.[0m
+[0;32mI (2852) ta-network: generic_broadcast_list[0m
+[0;32mI (2852) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (2857) ta-network: 20 46 15 01 01 00 00 00 [0m
+[0;32mI (2862) ta-network: 20 46 14 01 02 00 00 ff [0m
+[0;32mI (2867) ta-network: generic_ble_head[0m
+[0;32mI (2871) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (2876) ta-network: generic_lora_head[0m
+[0;32mI (2881) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (2886) ta-network: generic_vlc_head[0m
+[0;32mI (2890) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (2895) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2906) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2940) ta-network: A generic packet has been added by BLE.[0m
+[0;32mI (2940) ta-network: generic_broadcast_list[0m
+[0;32mI (2941) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (2946) ta-network: 20 46 15 01 01 00 00 00 [0m
+[0;32mI (2951) ta-network: 20 46 14 01 02 00 00 ff [0m
+[0;32mI (2956) ta-network: 20 24 14 03 01 00 [0m
+[0;32mI (2960) ta-network: generic_ble_head[0m
+[0;32mI (2965) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (2970) ta-network: generic_lora_head[0m
+[0;32mI (2974) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (2979) ta-network: generic_vlc_head[0m
+[0;32mI (2983) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (2988) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (2994) beacontest: Adding a new trigger, id = 20[0m
+[0;32mI (3003) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3009) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3081) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (3086) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (3123) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (3124) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3127) ta-network: A generic packet has been added by BLE.[0m
+[0;32mI (3130) ta-network: generic_broadcast_list[0m
+[0;32mI (3135) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (3140) ta-network: 20 46 15 01 01 00 00 00 [0m
+[0;32mI (3145) ta-network: 20 46 14 01 02 00 00 ff [0m
+[0;32mI (3150) ta-network: 20 24 14 03 01 00 [0m
+[0;32mI (3155) ta-network: 20 46 15 01 02 00 00 00 [0m
+[0;32mI (3159) ta-network: generic_ble_head[0m
+[0;32mI (3164) ta-network: 20 46 15 01 01 00 00 00 [0m
+[0;32mI (3169) ta-network: generic_lora_head[0m
+[0;32mI (3173) ta-network: 20 46 15 01 01 00 00 00 [0m
+[0;32mI (3178) ta-network: generic_vlc_head[0m
+[0;32mI (3183) ta-network: 20 46 15 01 01 00 00 00 [0m
+[0;32mI (3188) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3212) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3299) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3329) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3390) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3421) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3428) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (3467) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (3480) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3511) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3565) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3601) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3631) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3691) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3719) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3723) ta-network: A generic packet has been added by BLE.[0m
+[0;32mI (3723) ta-network: generic_broadcast_list[0m
+[0;32mI (3726) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (3731) ta-network: 20 46 15 01 01 00 00 00 [0m
+[0;32mI (3736) ta-network: 20 46 14 01 02 00 00 ff [0m
+[0;32mI (3741) ta-network: 20 24 14 03 01 00 [0m
+[0;32mI (3745) ta-network: 20 46 15 01 02 00 00 00 [0m
+[0;32mI (3750) ta-network: 20 24 15 03 01 01 [0m
+[0;32mI (3755) ta-network: generic_ble_head[0m
+[0;32mI (3759) ta-network: 20 46 14 01 02 00 00 ff [0m
+[0;32mI (3764) ta-network: generic_lora_head[0m
+[0;32mI (3769) ta-network: 20 46 14 01 02 00 00 ff [0m
+[0;32mI (3774) ta-network: generic_vlc_head[0m
+[0;32mI (3778) ta-network: 20 46 15 01 01 00 00 00 [0m
+[0;32mI (3783) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3789) beacontest: Adding a new trigger, id = 21[0m
+[0;32mI (3800) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (3837) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (3837) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3841) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3896) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3942) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (3990) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4036) ta-network: A generic packet has been added by BLE.[0m
+[0;32mI (4036) ta-network: generic_broadcast_list[0m
+[0;32mI (4037) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (4041) ta-network: 20 46 15 01 01 00 00 00 [0m
+[0;32mI (4046) ta-network: 20 46 14 01 02 00 00 ff [0m
+[0;32mI (4051) ta-network: 20 24 14 03 01 00 [0m
+[0;32mI (4056) ta-network: 20 46 15 01 02 00 00 00 [0m
+[0;32mI (4061) ta-network: 20 24 15 03 01 01 [0m
+[0;32mI (4065) ta-network: 20 63 14 14 14 [0m
+[0;32mI (4070) ta-network: generic_ble_head[0m
+[0;32mI (4074) ta-network: 20 24 14 03 01 00 [0m
+[0;32mI (4078) ta-network: generic_lora_head[0m
+[0;32mI (4083) ta-network: 20 24 14 03 01 00 [0m
+[0;32mI (4087) ta-network: generic_vlc_head[0m
+[0;32mI (4092) ta-network: 20 46 15 01 01 00 00 00 [0m
+[0;32mI (4097) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4103) beacontest: Adding a new rule, id = 20, 20 -> 20[0m
+[0;32mI (4112) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4127) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4139) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (4145) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (4176) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (4177) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4231) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4261) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4321) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4375) ta-network: A generic packet has been added by BLE.[0m
+[0;32mI (4375) ta-network: generic_broadcast_list[0m
+[0;32mI (4375) ta-network: 20 46 14 01 01 00 00 ff [0m
+[0;32mI (4380) ta-network: 20 46 15 01 01 00 00 00 [0m
+[0;32mI (4385) ta-network: 20 46 14 01 02 00 00 ff [0m
+[0;32mI (4390) ta-network: 20 24 14 03 01 00 [0m
+[0;32mI (4395) ta-network: 20 46 15 01 02 00 00 00 [0m
+[0;32mI (4400) ta-network: 20 24 15 03 01 01 [0m
+[0;32mI (4404) ta-network: 20 63 14 14 14 [0m
+[0;32mI (4408) ta-network: 20 63 15 15 15 [0m
+[0;32mI (4412) ta-network: generic_ble_head[0m
+[0;32mI (4417) ta-network: 20 46 15 01 02 00 00 00 [0m
+[0;32mI (4422) ta-network: generic_lora_head[0m
+[0;32mI (4426) ta-network: 20 46 15 01 02 00 00 00 [0m
+[0;32mI (4431) ta-network: generic_vlc_head[0m
+[0;32mI (4436) ta-network: 20 46 14 01 02 00 00 ff [0m
+[0;32mI (4441) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4447) beacontest: Adding a new rule, id = 21, 21 -> 21[0m
+[0;32mI (4465) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4481) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (4518) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (4519) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4561) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4589) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4592) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4643) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4646) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4700) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4740) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (4740) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (4742) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4782) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4785) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4823) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (4855) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (4855) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4952) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (4997) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (5040) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (5161) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (5193) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (5193) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (5220) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (5251) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (5461) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (5491) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (5493) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (5497) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (5529) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (5530) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (5600) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (5689) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (5819) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (5834) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (5872) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (5882) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (5912) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (5951) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6002) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6026) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6056) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6092) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6152) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6164) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6176) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (6213) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (6214) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6217) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6271) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6301) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6325) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6380) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6450) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6481) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6490) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6519) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (6558) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (6558) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6610) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6653) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6741) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (6741) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (6743) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6780) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6826) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (6858) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (6863) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (6895) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (6914) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7004) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7046) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7050) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7080) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7111) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7141) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7171) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7189) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7195) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (7232) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (7233) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7260) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7318) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7351) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7427) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7538) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (7570) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (7570) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7582) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7621) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7711) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7800) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7830) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7870) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (7875) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (7907) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (7907) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7921) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7945) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (7973) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8012) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8021) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8101) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8131) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8212) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (8244) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (8251) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8306) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8396) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8481) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8548) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (8586) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (8586) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8610) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8641) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8671) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8741) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (8741) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (8762) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8852) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8882) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8890) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (8928) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (8928) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (8970) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9001) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9061) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9083) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9120) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9151) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9181) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9228) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (9232) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (9270) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (9271) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9298) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9361) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9391) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9451) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9502) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9541) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9544) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9559) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9576) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (9608) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (9608) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9662) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9671) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9750) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9781) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9833) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9891) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9913) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (9950) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (9979) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (9982) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10021) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10081) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10125) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10131) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10172) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10223) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10250) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (10255) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (10287) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (10287) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10320) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10412) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10433) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10472) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10517) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10559) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10592) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (10624) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (10624) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10648) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10711) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10741) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10741) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (10741) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (10831) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10891) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10921) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (10928) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (10960) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (10960) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11012) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11042) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11061) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11101) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11131) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11167) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11214) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11261) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (11266) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (11303) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (11311) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11341) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11356) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11392) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11431) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11483) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11580) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11610) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (11647) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (11647) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11651) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11657) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11697) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11730) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11779) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11852) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11882) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11953) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (11994) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (11995) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12001) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12091) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12121) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12182) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12212) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12272) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12284) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12295) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (12296) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (12333) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (12441) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12534) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12559) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12601) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12638) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (12676) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (12689) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12737) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (12747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (12827) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12924) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12961) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12980) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (13014) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (13022) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13052) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13112) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13142) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13193) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13212) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13258) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13298) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13314) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (13346) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (13351) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13400) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13440) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13501) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13531) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13609) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13647) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (13653) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (13685) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (13685) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13697) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13740) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13786) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13881) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13918) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13989) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (14027) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (14027) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14072) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14128) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14161) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14191) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14331) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (14371) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (14371) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14375) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14402) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14492) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14510) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14535) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14580) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14635) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14638) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14671) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14676) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (14713) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (14714) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (14747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (14792) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14843) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14882) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15014) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (15019) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (15050) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (15059) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15115) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15152) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15242) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15247) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15332) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15355) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (15393) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (15404) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15452) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15500) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15542) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15587) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15632) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15662) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15697) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (15731) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (15752) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15800) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15872) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15902) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15918) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15962) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15992) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16007) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16036) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (16068) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (16110) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16140) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16224) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16260) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16320) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16366) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16368) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (16369) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (16407) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (16411) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16472) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16502) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16532) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16592) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16622) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16652) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16682) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16703) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16712) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (16747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (16747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (16749) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (16763) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16802) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16892) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16982) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17056) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (17093) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (17094) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17101) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17146) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17192) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17237) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17273) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17310) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17326) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17394) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (17399) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (17436) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (17436) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17452) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17490) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17536) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17582) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17594) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17627) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17663) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17694) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17741) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (17773) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (17774) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17792) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17813) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17840) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17881) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17929) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17969) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17973) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18018) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18060) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18078) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (18115) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (18120) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18150) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18208) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18242) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18302) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18324) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18360) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18422) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (18454) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (18454) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18457) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18511) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18535) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18598) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18631) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18686) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18720) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (18747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (18754) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (18759) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (18791) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (18791) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18810) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18852) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18894) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18971) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19022) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19068) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19096) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (19128) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (19171) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19322) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19376) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19412) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19432) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (19471) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (19471) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19498) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19561) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19582) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19651) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19681) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19740) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19771) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19771) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (19776) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (19813) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (19814) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19826) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19862) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19892) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19951) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20041) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20118) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (20155) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (20169) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20252) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20282) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20322) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20370) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20416) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20462) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (20494) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (20494) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20504) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20550) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20580) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20593) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20671) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20701) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (20747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (20770) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20795) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (20800) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (20837) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (20837) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20910) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20935) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20956) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21002) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21092) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21113) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21142) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (21176) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (21277) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21329) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21371) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21420) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21458) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21476) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (21508) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (21509) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21601) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21661) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21721) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21811) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (21816) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (21848) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (21848) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21861) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21950) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21991) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22022) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22080) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22152) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (22189) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (22230) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22261) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22333) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22376) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22408) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22460) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22495) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (22532) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (22532) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22541) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22589) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22650) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (22747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (22766) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22832) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22837) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (22874) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (22874) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22920) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22951) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23020) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23069) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23112) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23154) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23175) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (23180) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (23212) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (23238) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23279) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23282) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23327) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23370) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23418) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23510) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23512) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (23549) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (23550) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23718) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23792) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23822) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23854) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (23886) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (23902) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23942) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23994) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24077) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24152) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24190) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (24222) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (24223) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24268) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24301) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24361) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24413) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24459) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24497) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24523) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (24528) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (24560) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (24560) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24590) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24662) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (24747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (24848) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24860) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (24897) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (24901) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24962) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24992) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25015) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25072) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25075) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25096) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25117) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25171) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25203) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (25240) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (25320) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25350) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25381) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25429) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25529) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25544) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (25581) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (25622) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25679) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25814) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25881) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (25886) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (25920) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (25920) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25977) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26010) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26024) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26120) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26168) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26221) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26226) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (26263) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (26264) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26312) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26342) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26369) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26402) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26432) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26475) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26568) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (26602) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (26602) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26612) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26642) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26685) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26730) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (26747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (26786) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26820) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26879) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26882) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26898) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26903) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (26908) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (26940) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (26998) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27052) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27092) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27138) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27181) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27205) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27232) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27245) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (27277) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (27296) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27345) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27391) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27433) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27479) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27512) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27570) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27581) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (27619) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (27619) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27661) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27667) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27734) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27782) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27803) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27872) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27923) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (27961) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (27961) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27964) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27991) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28063) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28142) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28232) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28258) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28261) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (28266) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (28303) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (28315) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28352) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28406) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28442) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28472) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28484) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28532) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28562) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28608) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (28640) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (28640) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28652) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28704) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28741) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (28747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (28771) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28804) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28853) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28890) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28936) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28941) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (28978) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (28981) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28993) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29042) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29071) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29074) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29131) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29208) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29259) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29279) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (29285) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (29316) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (29317) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29336) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29492) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29621) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (29653) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (29702) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29729) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29792) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29822) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29897) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29941) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29957) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (29989) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (30000) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30046) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30090) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30136) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30176) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30227) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30256) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30271) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30290) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (30295) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (30332) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (30332) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30344) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30386) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30430) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30470) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30561) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30598) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30601) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30636) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (30673) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (30711) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30715) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (30747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (30751) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30810) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30854) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30979) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (31018) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (31021) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31051) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31111) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31171) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31225) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31261) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31312) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31319) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (31325) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (31356) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (31357) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31375) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31441) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31661) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (31698) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (31698) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31741) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31831) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31846) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31922) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31952) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31982) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32003) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (32035) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (32036) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32096) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32124) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32190) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32214) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32280) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32310) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32336) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (32368) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (32389) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32426) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32477) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32521) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32571) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32612) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32666) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32668) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (32673) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (32705) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (32705) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (32747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (32792) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32822) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32843) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32882) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32898) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32971) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33010) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (33047) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (33052) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33091) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33167) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33255) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33300) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33351) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (33388) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (33388) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33444) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33526) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33662) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33694) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (33731) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (33732) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33739) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33780) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33825) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33872) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33923) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33962) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34032) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (34037) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (34069) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (34069) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34081) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34129) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34170) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34212) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34215) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34258) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34304) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34374) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (34411) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (34411) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34415) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34502) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34562) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34592) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34649) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34716) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (34747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (34747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (34748) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (34752) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34761) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34801) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34822) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34892) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34922) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34967) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35010) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35065) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (35097) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (35097) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35101) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35106) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35131) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35191) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35342) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35397) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (35402) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (35434) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (35492) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35522) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35570) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35610) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35659) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35719) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35739) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (35778) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (35778) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35784) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35833) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35874) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35930) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35971) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36058) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36085) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (36122) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (36122) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36131) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36177) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36211) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36223) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36266) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36355) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36391) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36421) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36422) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (36427) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (36464) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (36464) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36497) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36542) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36600) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36630) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36652) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36691) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (36747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (36751) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36768) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (36802) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (36802) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36842) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36872) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36953) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36992) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37017) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37107) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (37145) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (37145) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37232) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37245) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37321) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37411) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37441) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37449) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (37484) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (37496) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37530) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37621) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37660) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37763) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37772) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37785) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (37790) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (37822) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (37832) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37862) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37922) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37967) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38010) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38101) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38126) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (38158) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (38162) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38393) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38436) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38464) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (38501) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (38581) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38641) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38671) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38698) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38715) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (38747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (38760) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38785) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38802) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (38806) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (38843) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (38881) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38911) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38971) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39082) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39143) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39148) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (39186) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (39186) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39240) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39268) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39331) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39359) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39390) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39451) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39490) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (39522) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (39538) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39571) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39601) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39620) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39662) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39713) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39750) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39822) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (39827) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (39864) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (39864) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39871) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39916) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39961) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40003) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40081) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40097) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40171) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (40203) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (40203) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40207) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40231) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40286) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40289) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40310) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40340) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40411) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40471) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40509) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (40542) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (40592) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40616) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40680) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40683) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40711) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (40747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (40750) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40771) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40801) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40820) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40843) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (40848) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (40880) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (40880) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40891) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40900) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40982) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41012) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41031) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41085) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41131) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41162) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41174) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41181) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (41218) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (41222) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41282) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41310) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41340) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41353) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41393) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41397) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41446) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41480) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41483) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41525) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (41565) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (41565) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41611) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41642) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41727) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41730) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41791) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41815) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41818) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41842) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41870) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (41908) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (41911) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41923) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42028) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42031) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42061) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42079) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42115) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42136) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42178) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (42178) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (42179) beacontest: Priority 2 packet received from BLE[0m
+[0;32mI (42185) beacontest: Triggering a driver.[0m
+[0;32mI (42190) RgbLedDriver: Taking action. R:0 G:0 B:0[0m
+[0;32mI (42195) ta-network: A signal packet has been added by BLE.[0m
+[0;32mI (42202) ta-network: signal_broadcast_list[0m
+[0;32mI (42207) ta-network: 42 82 01 15 [0m
+[0;32mI (42211) ta-network: signal_ble_head[0m
+[0;32mI (42215) ta-network: 42 82 01 15 [0m
+[0;32mI (42219) ta-network: signal_lora_head[0m
+[0;32mI (42223) ta-network: 42 82 01 15 [0m
+[0;32mI (42227) ta-network: signal_vlc_head[0m
+[0;32mI (42232) ta-network: 42 82 01 15 [0m
+[0;32mI (42236) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (42246) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (42278) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (42278) ta-network: Adding a packet to blacklist.[0m
+[0;32mI (42278) ta-network: Packet added to blacklist.[0m
+[0;32mI (42283) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42294) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (42295) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (42332) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42422) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42434) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (42434) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (42560) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42596) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (42628) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (42628) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42632) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (42635) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (42662) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (42662) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (42747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (42747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (42748) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (42754) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (42763) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42781) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42856) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42859) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42929) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (42935) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (42974) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (42991) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42994) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43039) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43042) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43075) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43121) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43164) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43168) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43244) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43278) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (43310) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (43326) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43373) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43456) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43500) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43552) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43583) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43586) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43615) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (43648) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (43649) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43654) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43707) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43741) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43763) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43831) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43861) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43922) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43932) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43956) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (43988) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (43988) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43991) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44006) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44038) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44071) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44131) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44143) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44221) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44251) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44288) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (44293) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (44330) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (44330) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44335) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44340) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44371) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44425) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44552) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44582) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44589) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44593) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44611) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44635) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (44673) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (44673) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44688) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44731) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44747) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (44747) ta-network: Removing a packet by TTL filter![0m
+[0;32mI (44747) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (44762) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44807) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44849) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44852) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44897) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44900) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44942) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44977) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (45016) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (45017) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45021) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45062) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45116) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45160) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45202) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45205) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45251) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45290) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45293) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45321) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (45353) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (45391) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45446) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45480) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45507) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45511) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (45511) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (45515) beacontest: Priority 2 packet received from BLE[0m
+[0;32mI (45521) beacontest: Triggering a driver.[0m
+[0;32mI (45526) RgbLedDriver: Taking action. R:0 G:0 B:255[0m
+[0;32mI (45531) ta-network: A signal packet has been added by BLE.[0m
+[0;32mI (45538) ta-network: signal_broadcast_list[0m
+[0;32mI (45543) ta-network: 42 82 01 14 [0m
+[0;32mI (45548) ta-network: signal_ble_head[0m
+[0;32mI (45551) ta-network: 42 82 01 14 [0m
+[0;32mI (45555) ta-network: signal_lora_head[0m
+[0;32mI (45560) ta-network: 42 82 01 14 [0m
+[0;32mI (45563) ta-network: signal_vlc_head[0m
+[0;32mI (45569) ta-network: 42 82 01 14 [0m
+[0;32mI (45575) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45600) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45643) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45654) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (45655) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (45686) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (45687) ta-network: Adding a packet to blacklist.[0m
+[0;32mI (45687) ta-network: Packet added to blacklist.[0m
+[0;32mI (45692) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45752) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45806) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (45806) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (45853) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (45853) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (45893) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45896) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (45896) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (46003) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (46040) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (46040) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46050) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (46050) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (46074) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46080) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (46081) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (46140) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46171) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46182) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46227) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46230) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46261) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46285) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46321) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46341) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (46346) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (46379) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (46380) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46388) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46422) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46426) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46471) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46527) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46567) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46570) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46612) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46651) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46681) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46686) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (46718) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (46718) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46721) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46731) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46753) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (46753) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (46798) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46822) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46861) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46891) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46904) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46943) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46946) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46982) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47022) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (47054) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (47055) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47101) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47131) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47158) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47161) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47191) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47206) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47243) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47246) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47300) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47322) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47334) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47337) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47355) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (47360) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (47397) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (47402) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47424) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47456) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47490) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47521) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47569) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47573) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47612) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47642) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47701) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (47739) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (47739) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47800) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47843) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47881) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47911) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (47962) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48001) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48019) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48044) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (48081) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (48091) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48148) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48190) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48266) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48271) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48301) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48329) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48361) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48364) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48381) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (48421) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (48421) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48445) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48478) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48532) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48572) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48620) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48662) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48689) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48707) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48721) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (48726) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (48753) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (48753) ta-network: Removing a packet by TTL filter![0m
+[0;32mI (48753) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (48763) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (48764) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48779) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48803) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48857) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48861) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48918) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48922) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (48922) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (48925) beacontest: Priority 2 packet received from BLE[0m
+[0;32mI (48931) beacontest: Triggering a driver.[0m
+[0;32mI (48936) RgbLedDriver: Taking action. R:0 G:0 B:0[0m
+[0;32mI (48941) ta-network: A signal packet has been added by BLE.[0m
+[0;32mI (48948) ta-network: signal_broadcast_list[0m
+[0;32mI (48953) ta-network: 42 82 01 15 [0m
+[0;32mI (48957) ta-network: signal_ble_head[0m
+[0;32mI (48961) ta-network: 42 82 01 15 [0m
+[0;32mI (48965) ta-network: signal_lora_head[0m
+[0;32mI (48969) ta-network: 42 82 01 15 [0m
+[0;32mI (48973) ta-network: signal_vlc_head[0m
+[0;32mI (48978) ta-network: 42 82 01 15 [0m
+[0;32mI (48985) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (48996) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49051) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49075) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (49108) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (49109) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49122) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49206) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49253) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49298) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49343) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49388) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49414) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (49446) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (49470) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49495) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49552) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49591) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49594) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49641) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49681) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49746) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (49751) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (49783) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (49783) ta-network: Adding a packet to blacklist.[0m
+[0;32mI (49783) ta-network: Packet added to blacklist.[0m
+[0;32mI (49832) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49862) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49890) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49935) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (49980) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50025) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50066) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50087) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50092) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (50124) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (50131) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50158) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50161) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50221) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50341) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50402) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50425) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (50431) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (50463) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (50463) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50467) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50473) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50516) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50520) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50551) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50577) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50627) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50670) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50673) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50721) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50759) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (50759) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (50761) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50770) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (50802) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (50821) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50851) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50891) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50917) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50941) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50971) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (50995) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51031) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51061) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51108) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (51146) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (51146) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51182) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51271) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51301) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51307) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51331) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51409) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51446) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (51452) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (51492) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (51492) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51496) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51571) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51619) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51626) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51662) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51672) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51713) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51744) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51751) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51781) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51797) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (51837) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (51837) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51841) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51871) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51931) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51934) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (51961) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (51961) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (51962) beacontest: Priority 2 packet received from BLE[0m
+[0;32mI (51968) beacontest: Triggering a driver.[0m
+[0;32mI (51973) RgbLedDriver: Taking action. R:0 G:0 B:255[0m
+[0;32mI (51978) ta-network: A signal packet has been added by BLE.[0m
+[0;32mI (51985) ta-network: signal_broadcast_list[0m
+[0;32mI (51990) ta-network: 42 82 01 14 [0m
+[0;32mI (51994) ta-network: signal_ble_head[0m
+[0;32mI (51998) ta-network: 42 82 01 14 [0m
+[0;32mI (52002) ta-network: signal_lora_head[0m
+[0;32mI (52006) ta-network: 42 82 01 14 [0m
+[0;32mI (52010) ta-network: signal_vlc_head[0m
+[0;32mI (52015) ta-network: 42 82 01 14 [0m
+[0;32mI (52022) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52076) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52112) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52143) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (52175) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (52175) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52322) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52412) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52442) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52475) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (52480) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (52512) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (52512) ta-network: Adding a packet to blacklist.[0m
+[0;32mI (52512) ta-network: Packet added to blacklist.[0m
+[0;32mI (52517) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (52523) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (52557) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (52557) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (52561) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52568) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52621) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52651) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52711) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52741) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52762) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (52762) ta-network: Removing a packet by TTL filter![0m
+[0;32mI (52762) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (52801) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52835) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (52867) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (52867) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52871) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52919) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52923) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (52969) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53004) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53059) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53062) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53092) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53159) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53168) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (53173) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (53212) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (53212) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53251) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53269) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53303) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53365) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53399) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53432) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53460) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53464) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53491) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53512) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (53544) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (53574) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53664) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53700) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53745) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53789) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53818) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53850) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (53882) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (53882) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53909) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53956) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53992) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (53995) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (54022) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (54062) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (54092) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (54141) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (54144) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (54181) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (54186) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (54218) ta-network: Packet broadcasted by LoRa.[0m
+[0;32mI (54218) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (54230) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (54272) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (54317) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (54360) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (54391) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (54439) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (54481) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (54519) ta-network: Packet broadcasted by VLC.[0m
+[0;32mI (54524) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (54561) ta-network: Packet broadcasted by LoRa.[0m

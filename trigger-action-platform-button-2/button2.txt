@@ -1,0 +1,987 @@
+Toolchain path: /home/rafid/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a-5.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+Toolchain version: crosstool-ng-1.22.0-80-g6c4433a
+Compiler version: 5.2.0
+Python requirements from /home/rafid/esp/esp-idf/requirements.txt are satisfied.
+
+App "trigger-action-platform" version: v3.3.1
+Arduino libraries in build:                            
+Flashing binaries to serial port /dev/ttyUSB0 (app at offset 0x10000)...
+esptool.py v2.8
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32D0WDQ5 (revision 1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 4c:11:ae:df:9b:d8
+Uploading stub...
+Running stub...
+Stub running...
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Compressed 8192 bytes to 31...
+Writing at 0x0000e000... (100 %)Wrote 8192 bytes (31 compressed) at 0x0000e000 in 0.0 seconds (effective 7660.6 kbit/s)...
+Hash of data verified.
+Compressed 25632 bytes to 15261...
+Writing at 0x00001000... (100 %)Wrote 25632 bytes (15261 compressed) at 0x00001000 in 1.4 seconds (effective 151.9 kbit/s)...
+Hash of data verified.
+Compressed 706224 bytes to 404273...
+Writing at 0x00010000... (4 %)Writing at 0x00014000... (8 %)Writing at 0x00018000... (12 %)Writing at 0x0001c000... (16 %)Writing at 0x00020000... (20 %)Writing at 0x00024000... (24 %)Writing at 0x00028000... (28 %)Writing at 0x0002c000... (32 %)Writing at 0x00030000... (36 %)Writing at 0x00034000... (40 %)Writing at 0x00038000... (44 %)Writing at 0x0003c000... (48 %)Writing at 0x00040000... (52 %)Writing at 0x00044000... (56 %)Writing at 0x00048000... (60 %)Writing at 0x0004c000... (64 %)Writing at 0x00050000... (68 %)Writing at 0x00054000... (72 %)Writing at 0x00058000... (76 %)Writing at 0x0005c000... (80 %)Writing at 0x00060000... (84 %)Writing at 0x00064000... (88 %)Writing at 0x00068000... (92 %)Writing at 0x0006c000... (96 %)Writing at 0x00070000... (100 %)Wrote 706224 bytes (404273 compressed) at 0x00010000 in 35.7 seconds (effective 158.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 128...
+Writing at 0x00008000... (100 %)Wrote 3072 bytes (128 compressed) at 0x00008000 in 0.0 seconds (effective 1425.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+MONITOR
+0m
+[0;32mI (üets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0018,len:4
+load:0x3fff001c,len:6744
+load:0x40078000,len:12072
+load:0x40080400,len:6708
+entry 0x40080778
+[0;32mI (71) boot: Chip Revision: 1[0m
+[0;32mI (71) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (39) boot: ESP-IDF v3.3.1 2nd stage bootloader[0m
+[0;32mI (39) boot: compile time 02:10:09[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot: SPI Mode       : DIO[0m
+[0;32mI (51) boot: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00005000[0m
+[0;32mI (74) boot:  1 otadata          OTA data         01 00 0000e000 00002000[0m
+[0;32mI (81) boot:  2 app0             OTA app          00 10 00010000 00140000[0m
+[0;32mI (89) boot:  3 app1             OTA app          00 11 00150000 00140000[0m
+[0;32mI (96) boot:  4 spiffs           Unknown data     01 82 00290000 00170000[0m
+[0;32mI (104) boot: End of partition table[0m
+[0;32mI (108) boot: No factory image, trying OTA 0[0m
+[0;32mI (113) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (120) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x2345c (144476) map[0m
+[0;32mI (180) esp_image: segment 1: paddr=0x00033484 vaddr=0x3ffbdb60 size=0x02b2c ( 11052) load[0m
+[0;32mI (184) esp_image: segment 2: paddr=0x00035fb8 vaddr=0x40080000 size=0x00400 (  1024) load[0m
+[0;32mI (187) esp_image: segment 3: paddr=0x000363c0 vaddr=0x40080400 size=0x09c50 ( 40016) load[0m
+[0;32mI (212) esp_image: segment 4: paddr=0x00040018 vaddr=0x400d0018 size=0x73750 (472912) map[0m
+[0;32mI (378) esp_image: segment 5: paddr=0x000b3770 vaddr=0x4008a050 size=0x08f10 ( 36624) load[0m
+[0;32mI (405) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (444) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (444) boot: Disabling RNG early entropy source...[0m
+[0;32mI (444) cpu_start: Pro cpu up.[0m
+[0;32mI (447) cpu_start: Application information:[0m
+[0;32mI (452) cpu_start: Project name:     trigger-action-platform[0m
+[0;32mI (458) cpu_start: App version:      v3.3.1[0m
+[0;32mI (463) cpu_start: Compile time:     Mar 13 2020 02:10:11[0m
+[0;32mI (469) cpu_start: ELF file SHA256:  b3955b025164134a...[0m
+[0;32mI (475) cpu_start: ESP-IDF:          v3.3.1[0m
+[0;32mI (480) cpu_start: Starting app cpu, entry point is 0x40081494[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (491) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (497) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (509) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (516) heap_init: At 3FFBDB5C len 00000004 (0 KiB): DRAM[0m
+[0;32mI (522) heap_init: At 3FFC92B8 len 00016D48 (91 KiB): DRAM[0m
+[0;32mI (528) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (541) heap_init: At 40092F60 len 0000D0A0 (52 KiB): IRAM[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (230) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (231) beacontest: started[0m
+[0;32mI (242) beacontest: Flash initialized[0m
+[0;32mI (243) BLE: Bluetooth Classic memory released[0m
+[0;32mI (243) BTDM_INIT: BT controller compile version [5aed448][0m
+[0;32mI (250) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE[0m
+[0;32mI (261) BLE: Bluetooth initialized[0m
+[0;32mI (357) phy: phy_version: 4102, 2fa7a43, Jul 15 2019, 13:06:06, 0, 0[0m
+[0;32mI (591) BLE: BLE enabled[0m
+[0;32mI (673) BLE: Bluedroid enabled[0m
+[0;32mI (676) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (677) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (678) beacontest: I2C initialized[0m
+[0;32mI (681) beacontest: Parsers created[0m
+[0;32mI (686) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (695) beacontest: Button #1 driver created[0m
+[0;32mI (702) BLE: Starting scanning[0m
+[0;32mI (704) BLE: Scanning started[0m
+[0;32mI (708) BLE: Scan started[0m
+[0;32mI (2677) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (2677) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (4677) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (4677) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (6677) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (6677) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (8677) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (8677) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (10677) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (10677) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (10969) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (10969) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (10970) ta-network: A generic packet has been added by BLE.[0m
+[0;32mI (10976) ta-network: generic_broadcast_list[0m
+[0;32mI (10982) ta-network: 23 46 14 01 01 00 00 ff [0m
+[0;32mI (10986) ta-network: generic_ble_head[0m
+[0;32mI (10991) ta-network: 23 46 14 01 01 00 00 ff [0m
+[0;32mI (10996) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11029) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11059) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11089) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11149) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11209) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11215) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (11239) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11269) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (11269) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (11270) ta-network: A generic packet has been added by BLE.[0m
+[0;32mI (11276) ta-network: generic_broadcast_list[0m
+[0;32mI (11281) ta-network: 23 46 14 01 01 00 00 ff [0m
+[0;32mI (11286) ta-network: 23 46 15 01 01 00 00 00 [0m
+[0;32mI (11291) ta-network: generic_ble_head[0m
+[0;32mI (11296) ta-network: 23 46 14 01 01 00 00 ff [0m
+[0;32mI (11301) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11310) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11357) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11361) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11406) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11447) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11451) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11494) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11497) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11520) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (11569) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (11569) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (11570) ta-network: A generic packet has been added by BLE.[0m
+[0;32mI (11577) ta-network: generic_broadcast_list[0m
+[0;32mI (11582) ta-network: 23 46 14 01 01 00 00 ff [0m
+[0;32mI (11587) ta-network: 23 46 15 01 01 00 00 00 [0m
+[0;32mI (11592) ta-network: 23 46 14 01 02 00 00 ff [0m
+[0;32mI (11597) ta-network: generic_ble_head[0m
+[0;32mI (11602) ta-network: 23 46 15 01 01 00 00 00 [0m
+[0;32mI (11607) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11616) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11658) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11689) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11695) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11746) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11780) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11789) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11825) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (11828) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11868) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11880) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (11880) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (11881) ta-network: A generic packet has been added by BLE.[0m
+[0;32mI (11887) ta-network: generic_broadcast_list[0m
+[0;32mI (11893) ta-network: 23 46 14 01 01 00 00 ff [0m
+[0;32mI (11898) ta-network: 23 46 15 01 01 00 00 00 [0m
+[0;32mI (11903) ta-network: 23 46 14 01 02 00 00 ff [0m
+[0;32mI (11908) ta-network: 23 46 15 01 02 00 00 00 [0m
+[0;32mI (11913) ta-network: generic_ble_head[0m
+[0;32mI (11918) ta-network: 23 46 14 01 02 00 00 ff [0m
+[0;32mI (11922) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11932) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11937) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11958) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (11989) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12019) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12049) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12130) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (12169) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12178) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (12178) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (12179) ta-network: A generic packet has been added by BLE.[0m
+[0;32mI (12186) ta-network: generic_broadcast_list[0m
+[0;32mI (12191) ta-network: 23 46 14 01 01 00 00 ff [0m
+[0;32mI (12196) ta-network: 23 46 15 01 01 00 00 00 [0m
+[0;32mI (12201) ta-network: 23 46 14 01 02 00 00 ff [0m
+[0;32mI (12206) ta-network: 23 46 15 01 02 00 00 00 [0m
+[0;32mI (12211) ta-network: 23 24 14 03 01 00 [0m
+[0;32mI (12216) ta-network: generic_ble_head[0m
+[0;32mI (12220) ta-network: 23 46 15 01 02 00 00 00 [0m
+[0;32mI (12225) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12231) beacontest: Adding a new trigger, id = 20[0m
+[0;32mI (12237) ButtonDriver: New trigger: eventType=0[0m
+[0;32mI (12245) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12314) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12349) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12352) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12394) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12397) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12435) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (12438) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12469) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12481) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12484) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (12484) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (12488) ta-network: A generic packet has been added by BLE.[0m
+[0;32mI (12495) ta-network: generic_broadcast_list[0m
+[0;32mI (12500) ta-network: 23 46 14 01 01 00 00 ff [0m
+[0;32mI (12505) ta-network: 23 46 15 01 01 00 00 00 [0m
+[0;32mI (12510) ta-network: 23 46 14 01 02 00 00 ff [0m
+[0;32mI (12515) ta-network: 23 46 15 01 02 00 00 00 [0m
+[0;32mI (12520) ta-network: 23 24 14 03 01 00 [0m
+[0;32mI (12526) ta-network: 23 24 15 03 01 01 [0m
+[0;32mI (12529) ta-network: generic_ble_head[0m
+[0;32mI (12534) ta-network: 23 24 14 03 01 00 [0m
+[0;32mI (12538) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12545) beacontest: Adding a new trigger, id = 21[0m
+[0;32mI (12550) ButtonDriver: New trigger: eventType=1[0m
+[0;32mI (12559) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12564) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12571) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12611) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12677) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (12677) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (12679) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12698) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12742) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (12742) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12769) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12790) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (12790) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (12791) ta-network: A generic packet has been added by BLE.[0m
+[0;32mI (12798) ta-network: generic_broadcast_list[0m
+[0;32mI (12803) ta-network: 23 46 14 01 01 00 00 ff [0m
+[0;32mI (12807) ta-network: 23 46 15 01 01 00 00 00 [0m
+[0;32mI (12813) ta-network: 23 46 14 01 02 00 00 ff [0m
+[0;32mI (12818) ta-network: 23 46 15 01 02 00 00 00 [0m
+[0;32mI (12823) ta-network: 23 24 14 03 01 00 [0m
+[0;32mI (12828) ta-network: 23 24 15 03 01 01 [0m
+[0;32mI (12832) ta-network: 23 63 14 14 14 [0m
+[0;32mI (12836) ta-network: generic_ble_head[0m
+[0;32mI (12841) ta-network: 23 24 15 03 01 01 [0m
+[0;32mI (12845) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12851) beacontest: Adding a new rule, id = 20, 20 -> 20[0m
+[0;32mI (12871) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12919) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12949) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (12964) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13004) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13040) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13047) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (13050) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13094) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (13094) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (13096) ta-network: A generic packet has been added by BLE.[0m
+[0;32mI (13102) ta-network: generic_broadcast_list[0m
+[0;32mI (13107) ta-network: 23 46 14 01 01 00 00 ff [0m
+[0;32mI (13112) ta-network: 23 46 15 01 01 00 00 00 [0m
+[0;32mI (13117) ta-network: 23 46 14 01 02 00 00 ff [0m
+[0;32mI (13122) ta-network: 23 46 15 01 02 00 00 00 [0m
+[0;32mI (13127) ta-network: 23 24 14 03 01 00 [0m
+[0;32mI (13132) ta-network: 23 24 15 03 01 01 [0m
+[0;32mI (13137) ta-network: 23 63 14 14 14 [0m
+[0;32mI (13141) ta-network: 23 63 15 15 15 [0m
+[0;32mI (13145) ta-network: generic_ble_head[0m
+[0;32mI (13150) ta-network: 23 63 14 14 14 [0m
+[0;32mI (13154) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13160) beacontest: Adding a new rule, id = 21, 21 -> 21[0m
+[0;32mI (13169) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13175) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13182) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13227) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13230) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13275) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13339) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13352) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (13370) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13400) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13448) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13488) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13519) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13534) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13538) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13575) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13578) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13623) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13657) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (13669) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13699) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13753) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13789) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13816) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13834) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13837) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13876) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13880) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13919) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13922) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (13961) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (13964) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14006) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14119) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14143) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14188) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14233) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14237) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14267) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (14270) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14300) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14313) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14316) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14349) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14359) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14399) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14402) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14444) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14447) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14486) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14489) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14534) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14537) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14572) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (14617) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14677) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (14677) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (14689) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14708) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14750) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14795) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14798) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14840) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14877) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (14880) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14920) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (14966) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15015) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15181) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (15184) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15280) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15319) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15367) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15459) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15487) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (15529) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15580) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15620) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15674) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15791) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (15794) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15920) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (15980) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16070) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16095) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (16219) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16279) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16370) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16400) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (16496) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16542) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16579) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16627) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16677) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (16677) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (16706) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (16709) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16849) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16879) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (16939) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17011) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (17014) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17119) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17180) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17231) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17270) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17316) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (17319) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17359) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17390) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17450) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17480) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17510) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17540) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17600) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17621) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (17690) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17801) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17839) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17891) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (17926) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (17972) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18057) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18139) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18194) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18232) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (18409) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18439) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18499) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18529) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18536) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (18581) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18665) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18678) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (18678) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (18709) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18799) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18842) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (18845) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18933) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (18979) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19010) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19070) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19149) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (19149) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19242) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19279) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19455) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (19456) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19501) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19543) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19669) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19729) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19762) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (19763) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19814) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (19938) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20029) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20059) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20067) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (20110) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20149) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20269) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20329) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20373) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (20419) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20449) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20539) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20569) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20629) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20659) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20678) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (20678) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (20678) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (20720) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20840) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20912) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (20987) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (21020) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21050) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21110) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21199) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21288) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21294) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (21319) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21490) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21529) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21598) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (21709) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21800) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21872) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (21904) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (21919) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22009) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22069) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22183) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22208) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (22250) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22280) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22460) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22513) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (22549) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22579) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22600) ButtonDriver: Event: 1[0m
+[0;32mI (22600) ButtonDriver: Triggering signal 21[0m
+[0;32mI (22600) beacontest: Local signal: 21[0m
+[0;32mI (22602) ProtocolGen: Encoding signal protocol. Length: 3[0m
+[0;32mI (22608) ta-network: A signal packet has been added by TA.[0m
+[0;32mI (22614) ta-network: signal_broadcast_list[0m
+[0;32mI (22619) ta-network: 43 82 01 15 [0m
+[0;32mI (22623) ta-network: signal_ble_head[0m
+[0;32mI (22628) ta-network: 43 82 01 15 [0m
+[0;32mI (22657) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22678) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (22678) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (22821) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (22821) ta-network: Adding a packet to blacklist.[0m
+[0;32mI (22821) ta-network: Packet added to blacklist.[0m
+[0;32mI (22826) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (22940) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23049) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23137) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (23227) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23359) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (23359) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (23406) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (23406) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (23442) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (23492) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (23492) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (23536) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (23537) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (23580) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23621) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23747) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (23798) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (23895) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24019) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24052) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (24109) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24193) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24356) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (24470) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24530) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24576) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24661) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (24678) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (24678) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (24751) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24799) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24845) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24944) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (24967) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (25066) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25189) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25271) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (25274) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25364) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25545) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25576) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (25627) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25758) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (25882) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (25978) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26019) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26107) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26187) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (26190) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26269) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26321) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26408) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26449) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26482) ButtonDriver: Event: 0[0m
+[0;32mI (26482) ButtonDriver: Triggering signal 20[0m
+[0;32mI (26482) beacontest: Local signal: 20[0m
+[0;32mI (26484) ProtocolGen: Encoding signal protocol. Length: 3[0m
+[0;32mI (26490) ta-network: A signal packet has been added by TA.[0m
+[0;32mI (26496) ta-network: signal_broadcast_list[0m
+[0;32mI (26501) ta-network: 43 82 01 14 [0m
+[0;32mI (26505) ta-network: signal_ble_head[0m
+[0;32mI (26510) ta-network: 43 82 01 14 [0m
+[0;32mI (26519) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (26519) ta-network: Adding a packet to blacklist.[0m
+[0;32mI (26524) ta-network: Packet added to blacklist.[0m
+[0;32mI (26600) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (26630) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (26630) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (26678) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (26678) ta-network: Removing a packet by TTL filter![0m
+[0;32mI (26678) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (26683) ta-network: signal_blacklist[0m
+[0;32mI (26688) ta-network: 43 82 01 14 [0m
+[0;32mI (26719) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (26719) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (26795) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (26795) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (26835) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (26884) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (26884) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (26977) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27140) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (27170) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27200) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27371) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27444) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (27469) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27529) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27535) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27582) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27625) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27750) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (27829) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (27889) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28009) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28054) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (28057) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28144) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28235) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28360) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (28363) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28405) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28453) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28579) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28624) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28665) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (28692) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (28692) ta-network: Removing a packet by TTL filter![0m
+[0;32mI (28692) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (28698) ta-network: signal_blacklist[0m
+[0;32mI (28702) ta-network: Empty list.[0m
+[0;32mI (28716) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28789) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28850) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (28970) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (29024) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29150) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29274) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (29277) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29359) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29580) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (29629) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29809) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29884) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (29887) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (29980) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30109) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30157) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30190) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (30259) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30264) ButtonDriver: Event: 1[0m
+[0;32mI (30264) ButtonDriver: Triggering signal 21[0m
+[0;32mI (30264) beacontest: Local signal: 21[0m
+[0;32mI (30268) ProtocolGen: Encoding signal protocol. Length: 3[0m
+[0;32mI (30274) ta-network: A signal packet has been added by TA.[0m
+[0;32mI (30280) ta-network: signal_broadcast_list[0m
+[0;32mI (30285) ta-network: 43 82 01 15 [0m
+[0;32mI (30289) ta-network: signal_ble_head[0m
+[0;32mI (30293) ta-network: 43 82 01 15 [0m
+[0;32mI (30297) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30366) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30495) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (30495) ta-network: Adding a packet to blacklist.[0m
+[0;32mI (30495) ta-network: Packet added to blacklist.[0m
+[0;32mI (30500) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30539) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30588) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30706) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (30706) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (30721) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30811) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (30856) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (30979) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (30979) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (31040) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (31040) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (31069) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (31069) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (31115) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (31118) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (31118) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (31189) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31250) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31280) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31340) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31421) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (31424) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31578) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31639) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31693) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31725) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (31819) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31939) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (31999) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32031) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (32075) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32119) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32329) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32336) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (32381) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32420) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32450) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32510) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32600) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32640) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (32688) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32706) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (32706) ta-network: Removing a packet by TTL filter![0m
+[0;32mI (32706) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (32711) ta-network: signal_blacklist[0m
+[0;32mI (32716) ta-network: Empty list.[0m
+[0;32mI (32719) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32777) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32900) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32945) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (32948) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (32989) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33110) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33200) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33230) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33251) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (33290) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33410) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33470) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33555) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (33558) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33619) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33664) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33709) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33769) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33799) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33856) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33862) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (33889) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (33949) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34069) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34129) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34159) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34166) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (34250) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34280) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34370) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34430) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34471) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (34547) ButtonDriver: Event: 0[0m
+[0;32mI (34547) ButtonDriver: Triggering signal 20[0m
+[0;32mI (34547) beacontest: Local signal: 20[0m
+[0;32mI (34549) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34549) ProtocolGen: Encoding signal protocol. Length: 3[0m
+[0;32mI (34561) ta-network: A signal packet has been added by TA.[0m
+[0;32mI (34567) ta-network: signal_broadcast_list[0m
+[0;32mI (34573) ta-network: 43 82 01 14 [0m
+[0;32mI (34576) ta-network: signal_ble_head[0m
+[0;32mI (34581) ta-network: 43 82 01 14 [0m
+[0;32mI (34640) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34695) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34721) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (34721) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (34759) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34776) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (34777) ta-network: Adding a packet to blacklist.[0m
+[0;32mI (34777) ta-network: Packet added to blacklist.[0m
+[0;32mI (34819) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (34849) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35029) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35086) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (35149) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (35149) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (35210) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (35210) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (35239) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (35239) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (35300) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (35300) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (35392) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (35393) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (35393) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (35444) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (35444) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (35509) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35569) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35599) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35703) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (35898) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35944) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (35989) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36009) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (36049) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36313) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (36618) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (36678) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36721) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (36721) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (36739) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36829) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36859) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (36923) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (36980) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37040) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37070) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37130) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37184) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37228) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (37414) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37519) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37534) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (37579) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37639) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37699) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37819) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37838) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (37880) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (37892) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38025) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38070) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38115) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38144) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (38195) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38239) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38282) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38377) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38420) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38449) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (38497) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38721) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (38721) ta-network: Removing a packet by TTL filter![0m
+[0;32mI (38721) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (38727) ta-network: signal_blacklist[0m
+[0;32mI (38731) ta-network: Empty list.[0m
+[0;32mI (38754) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (38779) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (38899) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39058) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (39199) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39242) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39336) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39364) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (39409) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39543) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39649) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39669) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (39709) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39763) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39889) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39946) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (39973) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (40022) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40069) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40114) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40160) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40208) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40278) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (40369) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40418) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40459) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40505) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40547) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40583) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (40635) ButtonDriver: Event: 1[0m
+[0;32mI (40635) ButtonDriver: Triggering signal 21[0m
+[0;32mI (40635) beacontest: Local signal: 21[0m
+[0;32mI (40637) ProtocolGen: Encoding signal protocol. Length: 3[0m
+[0;32mI (40643) ta-network: A signal packet has been added by TA.[0m
+[0;32mI (40649) ta-network: signal_broadcast_list[0m
+[0;32mI (40654) ta-network: 43 82 01 15 [0m
+[0;32mI (40658) ta-network: signal_ble_head[0m
+[0;32mI (40663) ta-network: 43 82 01 15 [0m
+[0;32mI (40719) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40735) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (40735) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (40867) ButtonDriver: Event: 0[0m
+[0;32mI (40867) ButtonDriver: Triggering signal 20[0m
+[0;32mI (40867) beacontest: Local signal: 20[0m
+[0;32mI (40869) ProtocolGen: Encoding signal protocol. Length: 3[0m
+[0;32mI (40875) ta-network: A signal packet has been added by TA.[0m
+[0;32mI (40881) ta-network: signal_broadcast_list[0m
+[0;32mI (40886) ta-network: 43 82 01 15 [0m
+[0;32mI (40890) ta-network: 43 82 01 14 [0m
+[0;32mI (40894) ta-network: signal_ble_head[0m
+[0;32mI (40899) ta-network: 43 82 01 15 [0m
+[0;32mI (40903) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (40914) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (40915) ta-network: 43 82 01 15 [0m
+[0;32mI (40918) ta-network: Adding a packet to blacklist.[0m
+[0;32mI (40924) ta-network: Packet added to blacklist.[0m
+[0;32mI (40939) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41000) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41030) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41060) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41234) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (41234) ta-network: Adding a packet to blacklist.[0m
+[0;32mI (41234) ta-network: Packet added to blacklist.[0m
+[0;32mI (41390) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (41390) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (41479) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (41479) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (41510) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (41510) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (41543) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (41592) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (41592) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (41728) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (41728) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (41826) ta-network: Entering blacklist duplicate filter![0m
+[0;32mI (41826) ta-network: Exiting blacklist duplicate filter![0m
+[0;32mI (41849) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (41897) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41942) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (41983) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42026) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42072) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42121) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42154) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (42157) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42348) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42396) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42439) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42459) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (42462) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42552) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42636) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42679) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42735) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (42735) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (42764) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (42767) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42851) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (42941) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43025) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43070) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (43070) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43220) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43370) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43375) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (43423) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43469) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43512) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43579) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43609) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43680) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (43683) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43726) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43774) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43820) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43910) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (43985) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (44030) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44072) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44120) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44210) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44264) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44289) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (44292) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44388) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44419) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44473) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44521) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44595) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (44598) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44685) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44735) ta-network: Entering blacklist TTL filter![0m
+[0;32mI (44735) ta-network: Removing a packet by TTL filter![0m
+[0;32mI (44736) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44737) ta-network: Removing a packet by TTL filter![0m
+[0;32mI (44748) ta-network: Exiting blacklist TTL filter![0m
+[0;32mI (44752) ta-network: signal_blacklist[0m
+[0;32mI (44757) ta-network: Empty list.[0m
+[0;32mI (44779) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44867) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44901) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (44902) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44953) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (44989) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45049) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45079) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45139) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45199) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45207) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (45409) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45440) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45500) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45512) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (45590) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45650) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45725) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45782) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45817) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (45820) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45859) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (45950) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46007) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46037) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46094) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46122) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (46125) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46159) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46249) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46339) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46369) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46426) ta-network: Packet broadcasted by BLE.[0m
+[0;32mI (46429) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46519) beacontest: Priority 1 packet received from BLE[0m
+[0;32mI (46549) beacontest: Priority 1 packet received from BLE[0m

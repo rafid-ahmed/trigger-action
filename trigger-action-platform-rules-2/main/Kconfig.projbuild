@@ -1,0 +1,515 @@
+menu "Trigger-Action config"
+	config I2C_ENABLED
+		bool "Enable I2C"
+		default y
+		help
+			Enable I2C. May be needed by some drivers.
+
+menu "Action Drivers"
+
+	config DRIVER_RGB_LED
+		bool "RGB LED driver"
+		default n
+		help
+			Enable this to use a RGB LED
+
+	menu "RGB LED driver settings"
+		depends on DRIVER_RGB_LED
+		config DRIVER_RGB_LED_GPIO_RED
+			int "GPIO number - RED"
+			range 0 33
+			default 25
+			help
+				GPIO number for the red LED
+		config DRIVER_RGB_LED_GPIO_GREEN
+			int "GPIO number - GREEN"
+			range 0 33
+			default 33
+			help
+				GPIO number for the green LED
+		config DRIVER_RGB_LED_GPIO_BLUE
+			int "GPIO number - BLUE"
+			range 0 33
+			default 32
+			help
+				GPIO number for the blue LED
+		config DRIVER_RGB_LED_INSTANCE_ID
+			int "Instance ID"
+			range 1 1024
+			default 1
+			help
+				Instance ID for this LED.
+
+		config DRIVER_RGB_LED_ADVERTISE_LOCATION
+			bool "Location advertising enabled"
+			default n
+			help
+				Advertises the location of this LED.
+		menu "Location advertising settings"
+			depends on DRIVER_RGB_LED_ADVERTISE_LOCATION
+			config DRIVER_RGB_LED_ADVERTISE_LOCATION_X
+				int "X coordinate [cm]"
+				default 0
+				help
+					The x-coordiante of the LED in centimeters.
+			config DRIVER_RGB_LED_ADVERTISE_LOCATION_Y
+				int "Y coordinate [cm]"
+				default 0
+				help
+					The y-coordiante of the LED in centimeters.
+			config DRIVER_RGB_LED_ADVERTISE_LOCATION_Z
+				int "Z coordinate [cm]"
+				default 0
+				help
+					The z-coordiante of the LED in centimeters.
+		endmenu
+	endmenu
+
+	config DRIVER_BUZZER
+		bool "Buzzer driver"
+		default n
+		help
+			Passive buzzer driver. Can work as a frequency, note and tune player.
+
+	menu "Buzzer driver settings"
+		depends on DRIVER_BUZZER
+		config DRIVER_BUZZER_GPIO
+			int "Buzzer GPIO number"
+			range 0 33
+			default 13
+			help
+				GPIO number for the buzzer
+		config DRIVER_BUZZER_FREQ_ENABLE
+			bool "Frequency action"
+			default y
+			help
+				Enable frequency actions
+		menu "Frequency action settings"
+			depends on DRIVER_BUZZER_FREQ_ENABLE
+			config DRIVER_BUZZER_FREQ_INSTANCE_ID
+				int "Instance ID"
+				range 1 1024
+				default 1
+				help
+					Instance ID for this frequency action.
+
+			config DRIVER_BUZZER_FREQ_ADVERTISE_LOCATION
+				bool "Location advertising enabled"
+				default n
+				help
+					Advertises the location of this frequency buzzer action.
+			menu "Location advertising settings"
+				depends on DRIVER_BUZZER_FREQ_ADVERTISE_LOCATION
+				config DRIVER_BUZZER_FREQ_ADVERTISE_LOCATION_X
+					int "X coordinate [cm]"
+					default 0
+					help
+						The x-coordiante of the frequency buzzer in centimeters.
+				config DRIVER_BUZZER_FREQ_ADVERTISE_LOCATION_Y
+					int "Y coordinate [cm]"
+					default 0
+					help
+						The y-coordiante of the frequency buzzer in centimeters.
+				config DRIVER_BUZZER_FREQ_ADVERTISE_LOCATION_Z
+					int "Z coordinate [cm]"
+					default 0
+					help
+						The z-coordiante of the frequency buzzer in centimeters.
+			endmenu
+		endmenu
+
+		config DRIVER_BUZZER_NOTE_ENABLE
+			bool "Note player action"
+			default y
+			help
+				Enable note player actions
+
+		menu "Note player action settings"
+			depends on DRIVER_BUZZER_NOTE_ENABLE
+			config DRIVER_BUZZER_NOTE_INSTANCE_ID
+				int "Instance ID"
+				range 1 1024
+				default 1
+				help
+					Instance ID for this note player action.
+			
+			config DRIVER_BUZZER_NOTE_ADVERTISE_LOCATION
+				bool "Location advertising enabled"
+				default n
+				help
+					Advertises the location of this note player action.
+			menu "Location advertising settings"
+				depends on DRIVER_BUZZER_NOTE_ADVERTISE_LOCATION
+				config DRIVER_BUZZER_NOTE_ADVERTISE_LOCATION_X
+					int "X coordinate [cm]"
+					default 0
+					help
+						The x-coordiante of the note player in centimeters.
+				config DRIVER_BUZZER_NOTE_ADVERTISE_LOCATION_Y
+					int "Y coordinate [cm]"
+					default 0
+					help
+						The y-coordiante of the note player in centimeters.
+				config DRIVER_BUZZER_NOTE_ADVERTISE_LOCATION_Z
+					int "Z coordinate [cm]"
+					default 0
+					help
+						The z-coordiante of the note player in centimeters.
+			endmenu
+		endmenu
+
+		config DRIVER_BUZZER_TUNE_ENABLE
+			bool "Tune player action"
+			default y
+			help
+				Enable note player actions
+
+		menu "Tune player action settings"
+			depends on DRIVER_BUZZER_TUNE_ENABLE
+			config DRIVER_BUZZER_TUNE_INSTANCE_ID
+				int "Instance ID"
+				range 1 1024
+				default 1
+				help
+					Instance ID for this tune player action.
+			
+			config DRIVER_BUZZER_TUNE_ADVERTISE_LOCATION
+				bool "Location advertising enabled"
+				default n
+				help
+					Advertises the location of this tune player action.
+			menu "Location advertising settings"
+				depends on DRIVER_BUZZER_TUNE_ADVERTISE_LOCATION
+				config DRIVER_BUZZER_TUNE_ADVERTISE_LOCATION_X
+					int "X coordinate [cm]"
+					default 0
+					help
+						The x-coordiante of the tune player in centimeters.
+				config DRIVER_BUZZER_TUNE_ADVERTISE_LOCATION_Y
+					int "Y coordinate [cm]"
+					default 0
+					help
+						The y-coordiante of the tune player in centimeters.
+				config DRIVER_BUZZER_TUNE_ADVERTISE_LOCATION_Z
+					int "Z coordinate [cm]"
+					default 0
+					help
+						The z-coordiante of the tune player in centimeters.
+			endmenu
+		endmenu
+
+	endmenu
+
+	config DRIVER_LASER
+		bool "Laser driver"
+		default n
+		help
+			Enable this to use a Laser
+
+	menu "Laser driver settings"
+		depends on DRIVER_LASER
+		config DRIVER_LASER_GPIO
+			int "Laser GPIO number"
+			range 0 33
+			default 33
+			help
+				GPIO number for the Laser
+		
+		config DRIVER_LASER_INSTANCE_ID
+			int "Instance ID"
+			range 1 1024
+			default 1
+			help
+				Instance ID for this Laser.
+
+		config DRIVER_LASER_ADVERTISE_LOCATION
+			bool "Location advertising enabled"
+			default n
+			help
+				Advertises the location of this Laser.
+		menu "Location advertising settings"
+			depends on DRIVER_LASER_ADVERTISE_LOCATION
+			config DRIVER_LASER_ADVERTISE_LOCATION_X
+				int "X coordinate [cm]"
+				default 0
+				help
+					The x-coordiante of the Laser in centimeters.
+			config DRIVER_LASER_ADVERTISE_LOCATION_Y
+				int "Y coordinate [cm]"
+				default 0
+				help
+					The y-coordiante of the Laser in centimeters.
+			config DRIVER_LASER_ADVERTISE_LOCATION_Z
+				int "Z coordinate [cm]"
+				default 0
+				help
+					The z-coordiante of the Laser in centimeters.
+		endmenu
+	endmenu
+
+endmenu
+menu "Trigger Drivers"
+	config DRIVER_BUTTON
+		bool "Button driver"
+		default n
+		help
+			Enable this to use a button
+
+	menu "Button driver settings"
+		depends on DRIVER_BUTTON
+		config DRIVER_BUTTON_1_ENABLED
+			bool "Button #1 enabled"
+			default y
+			help
+				Enable button #1
+				
+		menu "Button #1 settings"
+			depends on DRIVER_BUTTON_1_ENABLED
+			config DRIVER_BUTTON_1_GPIO
+				int "GPIO number"
+				range 0 39
+				default 35
+				help
+					GPIO number for the button.
+			config DRIVER_BUTTON_1_ID
+				int "Instance ID"
+				range 1 4294967296
+				default 1
+				help
+					Instance ID for the button.
+
+			config DRIVER_BUTTON_1_ADVERTISE_LOCATION
+				bool "Location advertising enabled"
+				default n
+				help
+					Advertises the location of this button.
+			menu "Location advertising settings"
+				depends on DRIVER_BUTTON_1_ADVERTISE_LOCATION
+				config DRIVER_BUTTON_1_ADVERTISE_LOCATION_X
+					int "X coordinate [cm]"
+					default 0
+					help
+						The x-coordiante of the button in centimeters.
+				config DRIVER_BUTTON_1_ADVERTISE_LOCATION_Y
+					int "Y coordinate [cm]"
+					default 0
+					help
+						The y-coordiante of the button in centimeters.
+				config DRIVER_BUTTON_1_ADVERTISE_LOCATION_Z
+					int "Z coordinate [cm]"
+					default 0
+					help
+						The z-coordiante of the button in centimeters.
+			endmenu
+		endmenu
+
+		config DRIVER_BUTTON_2_ENABLED
+			bool "Button #2 enabled"
+			default n
+			help
+				Enable button #2
+		menu "Button #2 settings"
+			depends on DRIVER_BUTTON_2_ENABLED
+			config DRIVER_BUTTON_2_GPIO
+				int "GPIO number"
+				range 0 39
+				default 12
+				help
+					GPIO number for the button.
+			config DRIVER_BUTTON_2_ID
+				int "Instance ID"
+				range 1 4294967296
+				default 2
+				help
+					Instance ID for the button.
+
+			config DRIVER_BUTTON_2_ADVERTISE_LOCATION
+				bool "Location advertising enabled"
+				default n
+				help
+					Advertises the location of this button.
+			menu "Location advertising settings"
+				depends on DRIVER_BUTTON_2_ADVERTISE_LOCATION
+				config DRIVER_BUTTON_2_ADVERTISE_LOCATION_X
+					int "X coordinate [cm]"
+					default 0
+					help
+						The x-coordiante of the button in centimeters.
+				config DRIVER_BUTTON_2_ADVERTISE_LOCATION_Y
+					int "Y coordinate [cm]"
+					default 0
+					help
+						The y-coordiante of the button in centimeters.
+				config DRIVER_BUTTON_2_ADVERTISE_LOCATION_Z
+					int "Z coordinate [cm]"
+					default 0
+					help
+						The z-coordiante of the button in centimeters.
+			endmenu
+		endmenu
+	endmenu
+
+	config DRIVER_BMP180
+		bool "BMP180 driver"
+		default n
+		help
+			Enable this to use a BMP180
+
+	menu "BMP180 driver settings"
+		depends on DRIVER_BMP180
+		config DRIVER_BMP180_TEMPERATURE
+			bool "BMP180 temperature driver"
+			default y
+			help
+				disable this, when you don't need the temperatue sensor of the BMP180
+
+		menu "BMP180 temperature settings"
+			depends on DRIVER_BMP180_TEMPERATURE
+
+			config DRIVER_BMP180_TEMPERATURE_INSTANCE_ID
+				int "Instance ID"
+				range 1 1024
+				default 1
+				help
+					Instance ID for this BMP180 temperature sensor.
+
+			config DRIVER_BMP180_TEMPERATURE_ADVERTISE_LOCATION
+				bool "Location advertising enabled"
+				default n
+				help
+					Advertises the location of this BMP180 temperature sensor.
+			menu "Location advertising settings"
+				depends on DRIVER_BMP180_TEMPERATURE_ADVERTISE_LOCATION
+				config DRIVER_BMP180_TEMPERATURE_ADVERTISE_LOCATION_X
+					int "X coordinate [cm]"
+					default 0
+					help
+						The x-coordiante of the sensor in centimeters.
+				config DRIVER_BMP180_TEMPERATURE_ADVERTISE_LOCATION_Y
+					int "Y coordinate [cm]"
+					default 0
+					help
+						The y-coordiante of the sensor in centimeters.
+				config DRIVER_BMP180_TEMPERATURE_ADVERTISE_LOCATION_Z
+					int "Z coordinate [cm]"
+					default 0
+					help
+						The z-coordiante of the sensor in centimeters.
+			endmenu
+		endmenu
+
+
+		config DRIVER_BMP180_PRESSURE
+			bool "BMP180 pressure driver"
+			default y
+			help
+				disable this, when you don't need the pressure sensor of the BMP180
+		
+		menu "BMP180 pressure settings"
+			depends on DRIVER_BMP180_PRESSURE
+
+			config DRIVER_BMP180_PRESSURE_INSTANCE_ID
+				int "Instance ID"
+				range 1 1024
+				default 1
+				help
+					Instance ID for this BMP180 pressure sensor.
+
+			config DRIVER_BMP180_PRESSURE_ADVERTISE_LOCATION
+				bool "Location advertising enabled"
+				default n
+				help
+					Advertises the location of this BMP180 pressure sensor.
+			menu "Location advertising settings"
+				depends on DRIVER_BMP180_PRESSURE_ADVERTISE_LOCATION
+				config DRIVER_BMP180_PRESSURE_ADVERTISE_LOCATION_X
+					int "X coordinate [cm]"
+					default 0
+					help
+						The x-coordiante of the sensor in centimeters.
+				config DRIVER_BMP180_PRESSURE_ADVERTISE_LOCATION_Y
+					int "Y coordinate [cm]"
+					default 0
+					help
+						The y-coordiante of the sensor in centimeters.
+				config DRIVER_BMP180_PRESSURE_ADVERTISE_LOCATION_Z
+					int "Z coordinate [cm]"
+					default 0
+					help
+						The z-coordiante of the sensor in centimeters.
+			endmenu
+		endmenu
+	endmenu
+
+	config DRIVER_JOYSTICK
+		bool "Joystick driver"
+		default n
+		help
+			Enable this to use a joystick
+
+	menu "Button driver settings"
+		depends on DRIVER_JOYSTICK
+		config DRIVER_JOYSTICK_BUTTON_GPIO
+			int "Joystick GPIO number"
+			range 0 39
+			default 13
+			help
+				GPIO number for the joystick button
+		config DRIVER_JOYSTICK_X_ADC_CHAN
+			int "Joystick x-axis ADC channel"
+			range 0 7
+			default 4
+			help
+				ADC (analog to digital converter) channel.
+				only uses unit 1, at 9 bit width and 11dB attenuation
+				ADC1_CH0 (GPIO 36)
+				ADC1_CH1 (GPIO 37)
+				ADC1_CH2 (GPIO 38)
+				ADC1_CH3 (GPIO 39)
+				ADC1_CH4 (GPIO 32)
+				ADC1_CH5 (GPIO 33)
+				ADC1_CH6 (GPIO 34)
+			config DRIVER_JOYSTICK_Y_ADC_CHAN
+			int "Joystick y-axis ADC channel"
+			range 0 7
+			default 5
+			help
+				ADC (analog to digital converter) channel.
+				only uses unit 1, at 9 bit width and 11dB attenuation
+				ADC1_CH0 (GPIO 36)
+				ADC1_CH1 (GPIO 37)
+				ADC1_CH2 (GPIO 38)
+				ADC1_CH3 (GPIO 39)
+				ADC1_CH4 (GPIO 32)
+				ADC1_CH5 (GPIO 33)
+				ADC1_CH6 (GPIO 34)
+				ADC1_CH7 (GPIO 35)
+	endmenu
+
+	config DRIVER_IRRECV
+		bool "IR recv driver"
+		default n
+		help
+			Enable this to use a IR reciever
+
+	menu "IR recv driver settings"
+		depends on DRIVER_IRRECV
+		config DRIVER_IRRECV_GPIO
+			int "IR recv GPIO number"
+			range 0 39
+			default 14
+			help
+				GPIO number for the IR reciever
+	endmenu
+
+
+
+endmenu
+
+	config TAP_TEST_ADV
+		bool "Enable test adverts"
+		default n
+		help
+			If enabled, send adverts/beacons from the device itself.
+
+endmenu
